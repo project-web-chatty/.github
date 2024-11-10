@@ -62,6 +62,6 @@ SLACK과 DISCORD의 디자인을 차용하여 WEB CHATTY 웹 서비스의 구성
 ### 4. 기능 개발 및 배포
 FRONTEND 와 BACKEND가 협업하여 주요 기능 개발을 완료하였습니다. 기본적인 CRUD를 우선적으로 구현하였으며, 이후 소셜 로그인, 계층별 권한 기능을 추가하였습니다. 또한 개발 초기에 GITHUB WORKFLOWS를 통하여 DEPLOY 자동화를 구축하였습니다. 마지막으로 채팅 기능 개발을 위해 FRONTEND는 SockJS 등의 라이브러리, BACKEND는 RABBITMQ, STOMP PROTOCOL 등의 기술 스택을 학습한 뒤 개발을 진행하였습니다. FRONTEND와 BACKEND의 기술 스택 및 세부 개발 내용에 대해 궁금하다면 다음 레포를 각각 참조해주세요. 
 
-[chatty-server repo](https://github.com/project-web-chatty/chatty-server)
+[CHATTY-SERVER REPO](https://github.com/project-web-chatty/chatty-server)
 
-[chatty-front rep](https://github.com/project-web-chatty/chatty-web)
+[CHATTY-WEB REPO](https://github.com/project-web-chatty/chatty-web)
