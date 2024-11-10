@@ -1,8 +1,8 @@
-## PROJECT INTRODUCTION
+# PROJECT INTRODUCTION
 
 Web CHATTY 프로젝트는 웹소켓 및 메시지 브로커 기술 스택을 활용하여 슬랙과 디스코드 등의 웹 메신저 기능을 모방한 웹 서비스를 만들고자 시작한 프로젝트 입니다. 워크 스페이스 생성, 채널 생성, 채널 내 그룹 채팅, 프로필 관리 등의 서비스 구현을 본 프로젝트의 주 목표로 하였습니다.
 
-## PROFILE
+# PROFILE
 
 | 이름       | 역할         | GitHub                                      | 주요 기여 내용            |
 |------------|--------------|---------------------------------------------|---------------------------|
@@ -13,8 +13,9 @@ Web CHATTY 프로젝트는 웹소켓 및 메시지 브로커 기술 스택을 �
 
 
 
-## 개발 과정
-### 1 FIGMA FLOW CHART 1차 고안
+# 개발 과정
+
+### 1. FIGMA FLOW CHART 1차 고안
 SLACK과 DISCORD의 디자인을 차용하여 WEB CHATTY 웹 서비스의 구성을 일차적으로 설계해보았습니다.
 
 
@@ -23,7 +24,7 @@ SLACK과 DISCORD의 디자인을 차용하여 WEB CHATTY 웹 서비스의 구성
 | <img src="https://github.com/user-attachments/assets/10a12a6c-08ce-4429-9960-a4643482f171" alt="LANDING PAGE DESIGN" width="350"/><br>회원가입 및 로그인 기능을 담은 랜딩 페이지 디자인 | <img src="https://github.com/user-attachments/assets/03994d19-1af3-4fa3-b390-9df26b227a34" alt="CHANNEL DESIGN" width="350"/><br> 채널 생성 및 채널 내 메신저 기능 디자인 | <img src="https://github.com/user-attachments/assets/9dc2a447-b439-438a-82a1-ebae88a41089" alt="PROFILE DESIGN" width="350"/><br>회원 프로필 기능 디자인 |
 
 
-### 2 세부 기능 선정
+### 2. 세부 기능 선정
 1차 피그마 디자인 이후 회의를 거쳐 세부 기능을 선정하였습니다. 
 
 #### 워크스페이스 관리
@@ -58,4 +59,10 @@ SLACK과 DISCORD의 디자인을 차용하여 WEB CHATTY 웹 서비스의 구성
 | <img src="https://github.com/user-attachments/assets/47170205-cdfe-4b17-9e94-f5ee95ebdb92" alt="LANDING PAGE DESIGN" width="400"/><br>회원가입 및 로그인 기능을 담은 랜딩 페이지 디자인 | <img src="https://github.com/user-attachments/assets/3c50b6a5-6fd0-470b-ab9c-171097537c97" alt="WORKSPACE HOME DESIGN" width="400"/><br>워크스페이스 입장 시 디자인 | <img src="https://github.com/user-attachments/assets/8b26c71d-2a20-4d78-918d-e94aa103c8be" alt="WORKSPACE AND CHANEL SETTING DESIGN" width="400"/><br>워크스페이스 및 채널 SETTING 디자인 | <img src="https://github.com/user-attachments/assets/f123ae37-7a8b-453f-8b19-01864ce8a683" alt="SETTINGS DESIGN" width="400"/><br>사용자 설정 페이지 디자인 |
 
 
+### 4. 기능 개발
+FRONTEND 와 BACKEND가 협업하여 주요 기능 개발을 완료하였습니다. 기본적인 CRUD를 우선적으로 구현하였으며, 이후 소셜 로그인, 계층별 권한 기능을 추가하였습니다. 마지막으로 채팅 기능 개발을 위해 FRONTEND는 SockJS 등의 라이브러리, BACKEND는 RABBITMQ, STOMP PROTOCOL 등의 기술 스택을 학습한 뒤 개발을 진행하였습니다. FRONTEND와 BACKEND의 기술 스택 및 세부 개발 내용에 대해 궁금하다면 다음을 참조해주세요.
+
+[chatty-server repo](https://github.com/project-web-chatty/chatty-server)
+
+[chatty-front rep](https://github.com/project-web-chatty/chatty-web)
 
